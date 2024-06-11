@@ -38,8 +38,11 @@ function First() {
             ))}
           </div>
         </div>
-        <div>
+        <div className="flex justify-between">
           <button onClick={() => router.push("/")}>목록으로 돌아가기</button>
+          <button onClick={() => router.push("/pages/second")}>
+            이후 게시판으로 이동
+          </button>
         </div>
       </div>
     </>

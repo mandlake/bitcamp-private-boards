@@ -16,12 +16,16 @@ function Second() {
               <img
                 className="w-[80vw] h-[20vh]"
                 src="https://www.shutterstock.com/image-illustration/abstract-watercolor-smear-blot-painting-260nw-1976207843.jpg"
+                onClick={() => router.push(`/pages/second/details/${item}`)}
               />
               {item}
             </div>
           ))}
         </div>
-        <div>
+        <div className="flex justify-between">
+          <button onClick={() => router.push("/pages/first")}>
+            이전 게시판으로 이동
+          </button>
           <button onClick={() => router.push("/")}>목록으로 돌아가기</button>
         </div>
       </div>
